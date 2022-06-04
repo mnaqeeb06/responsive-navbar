@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8% 10px 8%;
+    box-shadow: 0px 4px 20px lightgrey;
+
+}
+.brandTitle{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.nav-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links ul li{
+  list-style: none;
+  padding: 1rem;
+  display: block;
+}
+.nav-links ul li:hover{
+  color: #555;
+}
+
+.toggle-button{
+position: absolute;
+top: 1.3rem;
+right: 2rem;
+display: none;
+}
+.bite-span{
+  background-color: bisque;
+}
+section h1{
+  text-align: center;
+}
+
+@media (max-width:500px) {
+  .toggle-button{
+    display: flex;
+
+
+    width: 25px;
+    height: 25px;
+    
+  }
+  .nav-links{
+   display: none;
+   width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links ul li{
+    text-align: center;
+    
+  }
+/*we give this class by js to display button when hambuger is clicked*/
+  .nav-links.active{
+display: flex;
+  }
+
+  
+}
+

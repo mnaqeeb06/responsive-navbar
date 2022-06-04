@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="styleSheet" href="style.css" />
+   
+    <title>Online Food Ordering</title>
+</head>
+<body>
+   
+  <nav class="navbar">
+<div class="brandTitle">Big<span class="bite-span">Bite</span></div>
+<a href="javascript:void(0);" class="toggle-button" onclick="icon_click()">
+ <img id="myImageId" src="images/menu.png"></img>
+</a>
+<div class="nav-links" id="nav-links">
+<ul>
+  <li><a>Home</a></li>
+  <li><a>Sign Up</a></li>
+  <li><a>LogIn</a></li>
+</ul>
+</div>
+
+  </nav>
+
+<section>
+  <h1>Responsive Navbar</h1>
+</section>
+
+
+
+
+  <script>
+    
+    function icon_click() {
+  var x = document.getElementById("nav-links");
+  var img = document.getElementById("myImageId");
+  if (x.className === "nav-links") {
+    x.className += " active";
+    img.src="images/cross.png";
+  } else {
+    x.className = "nav-links";
+    img.src="images/menu.png";
+  }
+}
+
+  </script>
+    
+</body>
+</html>
